@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:created="{Date}2015-09-01T02:44:26.604+08:00"
+    jcr:createdBy="admin"
+    jcr:primaryType="nt:unstructured"
+    firstName="Jane"
+    lastName="Doe"
+    gender="Female"
+    level="1"
+    Submit="Submit"/>

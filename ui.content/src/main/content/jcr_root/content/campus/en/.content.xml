@@ -2,10 +2,12 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
+        cq:lastModified="{Date}2015-09-01T02:36:39.008+08:00"
+        cq:lastModifiedBy="admin"
         jcr:primaryType="nt:unstructured"
         jcr:title="English"
-        pageTitle="New Project"
-        sling:resourceType="campus/components/structure/page">
+        sling:resourceType="campus/components/structure/page"
+        pageTitle="New Project">
         <logo
             jcr:primaryType="nt:unstructured"
             sling:resourceType="campus/components/structure/logo"/>
@@ -21,16 +23,16 @@
             <title_0
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Service Component"
-                type="h2"
-                sling:resourceType="campus/components/content/title"/>
+                sling:resourceType="campus/components/content/title"
+                type="h2"/>
             <servicecomponent
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="campus/components/content/helloworld"/>
             <title_1
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Lorem ipsum"
-                type="h2"
-                sling:resourceType="campus/components/content/title"/>
+                sling:resourceType="campus/components/content/title"
+                type="h2"/>
             <text
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="campus/components/content/text"
@@ -46,6 +48,68 @@
                 sling:resourceType="campus/components/content/text"
                 text="&lt;p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.&lt;/p>&#xa;&lt;p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.&lt;/p>&#xa;&lt;p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.&lt;/p>"
                 textIsRich="true"/>
+            <start
+                jcr:created="{Date}2015-09-01T02:34:58.930+08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2015-09-01T02:35:24.057+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/form/start"
+                action="/content/campus/en/data/"
+                actionType="foundation/components/form/actions/store"
+                formid="_content_campus_en_jcr_content_par_start"/>
+            <text_2
+                jcr:created="{Date}2015-09-01T02:35:37.128+08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2015-09-01T02:36:39.006+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="First Name"
+                sling:resourceSuperType="foundation/components/form/defaults/field"
+                sling:resourceType="foundation/components/form/text"
+                name="firstName"/>
+            <text_3
+                jcr:created="{Date}2015-09-01T02:35:38.926+08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2015-09-01T02:36:20.511+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Surname"
+                sling:resourceSuperType="foundation/components/form/defaults/field"
+                sling:resourceType="foundation/components/form/text"
+                name="lastName"
+                required="true"/>
+            <text_4
+                jcr:created="{Date}2015-09-01T02:35:42.847+08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2015-09-01T02:36:27.862+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Level"
+                sling:resourceSuperType="foundation/components/form/defaults/field"
+                sling:resourceType="foundation/components/form/text"
+                name="level"/>
+            <hidden
+                jcr:created="{Date}2015-09-01T02:35:50.118+08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2015-09-01T02:36:08.005+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceSuperType="foundation/components/form/defaults/field"
+                sling:resourceType="foundation/components/form/hidden"
+                defaultValue="nt:unstructured"
+                name="jcr:primaryType"/>
+            <submit
+                jcr:created="{Date}2015-09-01T02:35:45.655+08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2015-09-01T02:35:45.655+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceSuperType="foundation/components/form/defaults/field"
+                sling:resourceType="foundation/components/form/submit"/>
+            <form_end_1441046098957
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/form/end"/>
             <col_break14029137700350
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="campus/components/content/colctrl"
