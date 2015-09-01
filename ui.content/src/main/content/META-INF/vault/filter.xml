@@ -2,4 +2,5 @@
 <workspaceFilter version="1.0">
     <filter root="/content/campus"/>
     <filter root="/content/dam/campus"/>
+    <filter root="/content/usergenerated/campus/en"/>
 </workspaceFilter>

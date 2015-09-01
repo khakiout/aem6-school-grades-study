@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2015-09-01T02:36:39.008+08:00"
+        cq:lastModified="{Date}2015-09-01T14:52:15.258+08:00"
         cq:lastModifiedBy="admin"
         jcr:primaryType="nt:unstructured"
         jcr:title="English"
@@ -51,11 +51,11 @@
             <start
                 jcr:created="{Date}2015-09-01T02:34:58.930+08:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2015-09-01T02:35:24.057+08:00"
+                jcr:lastModified="{Date}2015-09-01T14:52:15.214+08:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="foundation/components/form/start"
-                action="/content/campus/en/data/"
+                action="/content/usergenerated/campus/en/students/"
                 actionType="foundation/components/form/actions/store"
                 formid="_content_campus_en_jcr_content_par_start"/>
             <text_2
@@ -114,6 +114,13 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="campus/components/content/colctrl"
                 controlType="break"/>
+            <studentlist
+                jcr:created="{Date}2015-09-01T12:08:08.125+08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2015-09-01T12:08:08.125+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="campus/components/content/studentlist"/>
             <text_1
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="campus/components/content/text"
