@@ -2,6 +2,6 @@
 
 <ul data-sly-use.list="com.khakiout.aem.core.components.DataListComponent" data-sly-list="${list.data}">
     <li>
-        ${item.firstName} ${item.lastName} - ${item.yearLevel.title} (${item.yearLevel.level})
+        ${item.recordId}: <b>${item.firstName} ${item.lastName}</b> - ${item.yearLevel.title} (${item.yearLevel.level})
     </li>
 </ul>
