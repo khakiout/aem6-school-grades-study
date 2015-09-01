@@ -8,6 +8,6 @@
             jcr:primaryType="cq:Widget"
             fieldLabel="Data Path"
             name="./path"
-            xtype="path"/>
+            xtype="pathfield"/>
     </items>
 </jcr:root>
