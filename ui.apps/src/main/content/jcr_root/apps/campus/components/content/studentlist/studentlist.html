@@ -1,13 +1,7 @@
-<p data-sly-test="${properties.path}">Data Path property: ${properties.path}</p>
+<h2>Student List</h2>
 
-<pre data-sly-use.hello="com.khakiout.aem.core.models.HelloWorldModel">
-HelloWorldModel says:
-${hello.message}
-</pre>
-
-<ul data-sly-use.list="studentlist.js" data-sly-list="${list.items}">
+<ul data-sly-use.list="com.khakiout.aem.core.components.DataListComponent" data-sly-list="${list.data}">
     <li>
-        ${item.firstName} - ${item.level} , ${item.path}
+        ${item.firstName} ${item.lastName} - ${item.yearLevel.title} (${item.yearLevel.level})
     </li>
-    <li>Root - ${list.root}</li>
 </ul>

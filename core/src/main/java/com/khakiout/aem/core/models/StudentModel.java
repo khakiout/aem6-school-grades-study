@@ -1,43 +1,38 @@
 package com.khakiout.aem.core.models;
 
+import javax.annotation.PostConstruct;
+import javax.inject.Inject;
+
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 
 @Model(adaptables = Resource.class)
 public class StudentModel {
 
+	@Inject
 	private String firstName;
+	@Inject
 	private String lastName;
-	private int level;
+	@Inject
+	private String level;
 	
-	public StudentModel(String firstName, String lastName, int level) {
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.level = level;
-	}
-
+	private YearLevel yearLevel;
+	
+	@PostConstruct
+    protected void init() {
+		yearLevel = YearLevel.fromLevel(Integer.parseInt(level));
+    }
+	
 	public String getFirstName() {
 		return firstName;
-	}
-
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
 	}
 
 	public String getLastName() {
 		return lastName;
 	}
-
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
-
-	public int getLevel() {
-		return level;
-	}
-
-	public void setLevel(int level) {
-		this.level = level;
+	
+	public YearLevel getYearLevel() {
+		return yearLevel;
 	}
 
 }
