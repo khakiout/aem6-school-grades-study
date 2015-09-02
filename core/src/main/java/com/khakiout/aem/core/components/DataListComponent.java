@@ -1,9 +1,7 @@
 package com.khakiout.aem.core.components;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import org.apache.sling.api.resource.Resource;
 import org.slf4j.Logger;
@@ -28,14 +26,12 @@ public class DataListComponent extends WCMUse {
 		path = getProperties().get("path", "");
 		log.debug("Component Path is {}", path);
 
-		Iterable<Resource> children = getResourceResolver().getResource(path).getChildren();
+		Resource folder = getResourceResolver().getResource(path);
+		Iterable<Resource> children = folder.getChildren();
 		for (Resource child : children) {
 			StudentModel model = child.adaptTo(StudentModel.class);
 			data.add(model);
 		}
-		data = data.stream()
-				.sorted(Comparator.comparing(StudentModel::getLastName))
-				.collect(Collectors.toList());
 		log.debug("There are {} students", data.size());
 	}
 	

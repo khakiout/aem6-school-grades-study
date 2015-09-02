@@ -13,6 +13,10 @@ public class StudentModel extends UserModel {
 	private int level;
 	
 	private YearLevel yearLevel;
+
+	public StudentModel(Resource resource) {
+		super(resource);
+	}
 	
 	@PostConstruct
     protected void init() {

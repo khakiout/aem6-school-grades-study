@@ -4,18 +4,22 @@ import javax.inject.Inject;
 
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
-import org.apache.sling.models.annotations.injectorspecific.Self;
+//import org.apache.sling.models.annotations.injectorspecific.Self;
 
 @Model(adaptables = Resource.class)
 public class UserModel {
 	
-	@Self
+//	@Self
 	private Resource resource;
 	
 	@Inject
 	private String firstName;
 	@Inject
 	private String lastName;
+	
+	public UserModel(Resource resource) {
+		this.resource = resource;
+	}
 	
 	public String getRecordId() {
 		return resource.getName();
