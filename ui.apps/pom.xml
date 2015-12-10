@@ -74,6 +74,25 @@
             </resource>
         </resources>
         <plugins>
+        	<!-- Coffeescript Compiler Plugin -->
+            <plugin>
+                <groupId>com.github.iron9light</groupId>
+                <artifactId>coffeescript-maven-plugin</artifactId>
+                <version>1.1.2</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
+                        <configuration>
+							<srcDir>${basedir}/src/main/content/jcr_root/etc/designs/campus/clientlib-site/coffee</srcDir>
+							<outputDir>${basedir}/src/main/content/jcr_root/etc/designs/campus/clientlib-site/coffee-build</outputDir>
+							<modifiedOnly>false</modifiedOnly>
+							<!-- other config options include here later -->
+						</configuration>
+                    </execution>
+                </executions>
+            </plugin>
             <!--
                 we want to keep some of the META-INF files and not configure
                 everything in the plugin (mainly the filters).

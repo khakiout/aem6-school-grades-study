@@ -3,3 +3,7 @@
 target/
 .classpath
 .settings/
+.metadata/
+
+#output folder for compiled coffeescript in clientlib
+ui.apps/src/main/content/jcr_root/etc/designs/campus/clientlib-site/coffee-build/
