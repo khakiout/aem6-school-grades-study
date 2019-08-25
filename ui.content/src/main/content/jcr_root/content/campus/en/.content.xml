@@ -2,137 +2,139 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:cloudserviceconfigs="[[]]"
-        cq:lastModified="{Date}2015-09-01T20:39:22.286+08:00"
-        cq:lastModifiedBy="admin"
-        jcr:primaryType="nt:unstructured"
+        cq:contextHubPath="/libs/settings/cloudsettings/legacy/contexthub"
+        cq:contextHubSegmentsPath="/conf/campus/settings/wcm/segments"
+        cq:template="/conf/campus/settings/wcm/templates/content-page"
+        jcr:primaryType="cq:PageContent"
         jcr:title="English"
         sling:resourceType="campus/components/structure/page"
-        pageTitle="New Project">
-        <logo
+        pageTitle="New Project"
+        socialMedia="[facebook]">
+        <root
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="campus/components/structure/logo"/>
-        <title
-            jcr:lastModified="{Date}2015-09-01T19:16:09.492+08:00"
-            jcr:lastModifiedBy="admin"
-            jcr:primaryType="nt:unstructured"
-            jcr:title="Student Records"
-            sling:resourceType="campus/components/content/title"/>
-        <topnav
-            jcr:primaryType="nt:unstructured"
-            sling:resourceType="campus/components/structure/topnav"/>
-        <par
-            jcr:primaryType="nt:unstructured"
-            sling:resourceType="wcm/foundation/components/parsys">
-            <studentlist
-                jcr:created="{Date}2015-09-01T12:08:08.125+08:00"
-                jcr:createdBy="admin"
-                jcr:lastModified="{Date}2015-09-01T12:08:08.125+08:00"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="campus/components/content/studentlist"
-                path="/content/usergenerated/campus/en/students"/>
-            <colctrl
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="campus/components/content/colctrl"
-                controlType="start"
-                layout="2;cq-colctrl-lt0"/>
-            <start
-                jcr:created="{Date}2015-09-01T02:34:58.930+08:00"
-                jcr:createdBy="admin"
-                jcr:lastModified="{Date}2015-09-01T14:52:15.214+08:00"
-                jcr:lastModifiedBy="admin"
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="foundation/components/form/start"
-                action="/content/usergenerated/campus/en/students/"
-                actionType="foundation/components/form/actions/store"
-                formid="_content_campus_en_jcr_content_par_start"/>
-            <title
-                jcr:created="{Date}2015-09-01T19:18:47.812+08:00"
-                jcr:createdBy="admin"
-                jcr:lastModified="{Date}2015-09-01T19:19:03.470+08:00"
-                jcr:lastModifiedBy="admin"
-                jcr:primaryType="nt:unstructured"
-                jcr:title="Create Record"
-                sling:resourceType="campus/components/content/title"/>
-            <text_2
-                jcr:created="{Date}2015-09-01T02:35:37.128+08:00"
-                jcr:createdBy="admin"
-                jcr:lastModified="{Date}2015-09-01T19:20:32.767+08:00"
-                jcr:lastModifiedBy="admin"
-                jcr:primaryType="nt:unstructured"
-                jcr:title="First Name"
-                sling:resourceSuperType="foundation/components/form/defaults/field"
-                sling:resourceType="foundation/components/form/text"
-                name="firstName"
-                required="true"
-                requiredMessage="First Name is required"/>
-            <text_3
-                jcr:created="{Date}2015-09-01T02:35:38.926+08:00"
-                jcr:createdBy="admin"
-                jcr:lastModified="{Date}2015-09-01T19:20:45.525+08:00"
-                jcr:lastModifiedBy="admin"
-                jcr:primaryType="nt:unstructured"
-                jcr:title="Surname"
-                sling:resourceSuperType="foundation/components/form/defaults/field"
-                sling:resourceType="foundation/components/form/text"
-                name="lastName"
-                required="true"
-                requiredMessage="Last Name is required"/>
-            <text_4
-                jcr:created="{Date}2015-09-01T02:35:42.847+08:00"
-                jcr:createdBy="admin"
-                jcr:lastModified="{Date}2015-09-01T19:21:02.653+08:00"
-                jcr:lastModifiedBy="admin"
-                jcr:primaryType="nt:unstructured"
-                jcr:title="Level"
-                sling:resourceSuperType="foundation/components/form/defaults/field"
-                sling:resourceType="foundation/components/form/text"
-                constraintType="foundation/components/form/constraints/numeric"
-                name="level"
-                required="true"
-                requiredMessage="Year Level is required"/>
-            <hidden
-                jcr:created="{Date}2015-09-01T02:35:50.118+08:00"
-                jcr:createdBy="admin"
-                jcr:lastModified="{Date}2015-09-01T02:36:08.005+08:00"
-                jcr:lastModifiedBy="admin"
-                jcr:primaryType="nt:unstructured"
-                sling:resourceSuperType="foundation/components/form/defaults/field"
-                sling:resourceType="foundation/components/form/hidden"
-                defaultValue="nt:unstructured"
-                name="jcr:primaryType"/>
-            <form_end_1441046098957
-                jcr:lastModified="{Date}2015-09-01T19:17:33.324+08:00"
-                jcr:lastModifiedBy="admin"
-                jcr:primaryType="nt:unstructured"
-                jcr:title="Create"
-                sling:resourceType="foundation/components/form/end"
-                submit="true"/>
-            <col_break14029137700350
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="campus/components/content/colctrl"
-                controlType="break"/>
-            <text_1
-                jcr:lastModified="{Date}2015-09-01T19:20:10.158+08:00"
-                jcr:lastModifiedBy="admin"
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="campus/components/content/text"
-                text="&lt;p>This is where we can add records for students. Soon we will try to add their grades.&lt;/p>&#xa;"
-                textIsRich="true"/>
-            <col_end14029137700351
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="campus/components/content/colctrl"
-                controlType="end"/>
-            <image_1
-                jcr:created="{Date}2015-01-01T00:00:00.000Z"
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="campus/components/content/image"
-                fileReference="/content/dam/campus/asset.jpg"/>
-        </par>
-        <image jcr:primaryType="nt:unstructured">
-            <file/>
-        </image>
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="What is Lorem Ipsum?"
+                    sling:resourceType="campus/components/content/title"/>
+                <text
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="campus/components/content/text"
+                    text="&lt;p>&lt;b>Lorem Ipsum&lt;/b>&amp;nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;br>&#xa;&lt;/p>&#xa;"
+                    textIsRich="true"/>
+                <image
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="campus/components/content/image"
+                    fileReference="/content/dam/campus/asset.jpg"/>
+                <list
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="campus/components/content/list"
+                    childDepth="1"
+                    linkItems="true"
+                    listFrom="static"
+                    pages="[/content/campus/en,/content/campus/fr]"
+                    showDescription="false"
+                    showModificationDate="false"
+                    sortOrder="asc"
+                    tagsMatch="any"/>
+                <carousel
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="campus/components/content/carousel"
+                    autoplay="false"
+                    delay="5000">
+                    <image
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="campus/components/content/image"
+                        fileReference="/content/dam/campus/asset.jpg"/>
+                    <text
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="campus/components/content/text"
+                        text="&lt;p>&lt;b>Lorem Ipsum&lt;/b>&amp;nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </carousel>
+                <tabs
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="campus/components/content/tabs">
+                    <item_1
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Tab 1"
+                        sling:resourceType="wcm/foundation/components/responsivegrid">
+                        <image
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="campus/components/content/image"
+                            fileReference="/content/dam/campus/asset.jpg"/>
+                    </item_1>
+                    <item_2
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Tab 2"
+                        sling:resourceType="wcm/foundation/components/responsivegrid">
+                        <text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="campus/components/content/text"
+                            text="&lt;p>&lt;b>Lorem Ipsum&lt;/b>&amp;nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p>&#xa;"
+                            textIsRich="true"/>
+                    </item_2>
+                </tabs>
+                <teaser
+                    jcr:description="&lt;p>Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p>&#xd;&#xa;"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Lorem Ipsum"
+                    sling:resourceType="campus/components/content/teaser"
+                    actionsEnabled="false"
+                    descriptionFromPage="false"
+                    fileReference="/content/dam/campus/asset.jpg"
+                    textIsRich="true"
+                    titleFromPage="false"/>
+                <helloworld
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="campus/components/content/helloworld"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="campus/components/form/container"
+                    action="/content/usergenerated/campus/en/cq-gen1506071823762/"
+                    actionType="foundation/components/form/actions/store">
+                    <text
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Lorem"
+                        sling:resourceType="campus/components/form/text"
+                        name="lorem"
+                        rows="2"
+                        type="text"/>
+                    <options
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Where does it come from?"
+                        sling:resourceType="campus/components/form/options"
+                        name="come-from"
+                        source="local"
+                        type="checkbox">
+                        <items jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                selected="false"
+                                text="A"
+                                value="a"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                selected="false"
+                                text="B"
+                                value="b"/>
+                        </items>
+                    </options>
+                    <button
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="campus/components/form/button"/>
+                </container>
+                <sharing
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="campus/components/content/sharing"/>
+            </responsivegrid>
+        </root>
     </jcr:content>
-    <view-grades/>
 </jcr:root>
